@@ -1,0 +1,1287 @@
+
+
+```python
+print("What's up I2K" )
+```
+
+Ако искаш да ползваш това поле за коментари избери Markdown
+
+Как да ползваме CMD or the console
+
+On my PC -> cmd -> check the current directory with command 'cd' // To check all files in this directory use command 'dir' // To go to one of the folders have to use command 'cd + name of the folder' // За връщане в предишната папка се ползва командата ' cd..' //  За да се изчисти всичко от конзолата се ползва команда ' cls ' //
+
+First Lesson - Numbers
+
+
+```python
+2 + 1 + 4
+```
+
+
+
+
+    7
+
+
+
+
+```python
+100 - 5 - 7 + 3
+```
+
+
+
+
+    91
+
+
+
+
+```python
+9 + (15 - 5)
+```
+
+
+
+
+    19
+
+
+
+Python работи и като каукулатор :D
+
+
+```python
+2*(2 + 3) / 2
+```
+
+
+
+
+    5.0
+
+
+
+
+```python
+7 % 4
+```
+
+
+
+
+    3
+
+
+
+
+```python
+50 % 5
+```
+
+
+
+
+    0
+
+
+
+% работи по следния начин. Пример: 6 % 2 е равно на 0 защото няма остатък когато извадим 2 от 6 (3 пъти)
+Пример:  7 % 2 е равно на 1 защото остава 1 когато извадим 2 от 7 (3 пъти)
+Пример:   7 % 4 = 3 това се получава понеже можем да вместим 4 само веднъж в 7 и ни остава остатък 3
+
+
+```python
+2 ** 3
+```
+
+
+
+
+    8
+
+
+
+2 ** 3 се получава като 2 + 2 + 2 + 2 = 8
+
+
+```python
+1/2
+```
+
+
+
+
+    0.5
+
+
+
+
+```python
+a = 5
+```
+
+
+```python
+a
+```
+
+
+
+
+    5
+
+
+
+
+```python
+a = 10
+```
+
+
+```python
+a
+```
+
+
+
+
+    10
+
+
+
+За разлика от други програмни езици в Python можем да променяме името на променливата по всяко време без това да изкарва грешка!
+
+
+```python
+a + a
+```
+
+
+
+
+    20
+
+
+
+
+```python
+a = a + a
+```
+
+
+```python
+a
+```
+
+
+
+
+    20
+
+
+
+
+```python
+type(a)
+```
+
+
+
+
+    int
+
+
+
+Ако не знаем какъв тип е променливата ползваме функцията type. В случая променливата е число (int).
+
+
+```python
+a = 30.1
+```
+
+
+```python
+type(a)
+```
+
+
+
+
+    float
+
+
+
+
+```python
+my_income = 100
+
+tax_rate = 0.1
+
+my_taxes = my_income * tax_rate
+```
+
+
+```python
+my_taxes
+```
+
+
+
+
+    10.0
+
+
+
+
+```python
+'hello'
+```
+
+
+
+
+    'hello'
+
+
+
+
+```python
+"world"
+```
+
+
+
+
+    'world'
+
+
+
+
+```python
+'this is also a string'
+```
+
+
+
+
+    'this is also a string'
+
+
+
+
+```python
+'I'm going to run'
+```
+
+
+      File "<ipython-input-4-0955d3ba5940>", line 1
+        'I'm going to run'
+           ^
+    SyntaxError: invalid syntax
+    
+
+
+В горния пример дава грешка поради невалиден синтаксис. За да изпишем този стриг без да ни изкарва грешка трябва да ползваме " " вместо ' ' 
+
+
+```python
+"I'm goning to run"
+```
+
+
+
+
+    "I'm goning to run"
+
+
+
+
+```python
+print('hello world')
+```
+
+    hello world
+    
+
+
+```python
+print('hello \n world')
+```
+
+    hello 
+     world
+    
+
+\n се използва когато искаме да преместим стринга на друг ред. В случая на долния ред. Ако не оставим място между \n и думата ще се показват едно под друго.
+
+
+```python
+print('hello \nworld')
+```
+
+    hello 
+    world
+    
+
+
+```python
+print('hello \tworld')
+```
+
+    hello 	world
+    
+
+t в случая се използва като tab и оставя 4 празни полета между думите
+
+
+```python
+len('hello')
+```
+
+
+
+
+    5
+
+
+
+
+```python
+len('I am')
+```
+
+
+
+
+    4
+
+
+
+LEN брои колко знака има в стринга като брои дори и празните полета както се вижда във втория случай.
+
+
+```python
+mystring = "Hello World"
+```
+
+
+```python
+
+print (mystring)
+```
+
+    Hello World
+    
+
+
+```python
+mystring[0]
+```
+
+
+
+
+    'H'
+
+
+
+
+```python
+mystring[8]
+```
+
+
+
+
+    'r'
+
+
+
+
+```python
+mystring[-3]
+```
+
+
+
+
+    'r'
+
+
+
+
+```python
+mystring = "abcdefghijk"
+```
+
+
+```python
+mystring
+```
+
+
+
+
+    'abcdefghijk'
+
+
+
+
+```python
+mystring[2]
+```
+
+
+
+
+    'c'
+
+
+
+
+```python
+mystring[2:]
+```
+
+
+
+
+    'cdefghijk'
+
+
+
+С помоща на : можем да преброим колко символа има в даден стринг като започнем от точно определено място. [2:] брои от втория символ до края на стринга.
+
+
+```python
+mystring[:3]
+```
+
+
+
+
+    'abc'
+
+
+
+<font color='red'>В този случай взимаме всички символи до 3 като броим от 0. Трябва да се помни, че когато използваме : то не взима символа който сме задали. Както в случая с 3. Ако преброим стринга ще видим, че резултата е грешен понеже 3 в случая е D. Това е така понеже командата брои до 3, но не го включва в резултата.</font>
+
+
+```python
+mystring[3:6]
+```
+
+
+
+
+    'def'
+
+
+
+
+```python
+mystring[1:3]
+```
+
+
+
+
+    'bc'
+
+
+
+
+```python
+mystring[::]
+```
+
+
+
+
+    'abcdefghijk'
+
+
+
+[::] с тази команда казваме да се изведе стринга от началото до края
+
+
+```python
+mystring[::2]
+```
+
+
+
+
+    'acegik'
+
+
+
+
+```python
+mystring[::3]
+```
+
+
+
+
+    'adgj'
+
+
+
+
+```python
+mystring[2:7:2]
+```
+
+
+
+
+    'ceg'
+
+
+
+
+```python
+mystring[::-1]
+```
+
+
+
+
+    'kjihgfedcba'
+
+
+
+
+```python
+name = "Ivaylo"
+```
+
+
+```python
+last_letters = name[1:]
+```
+
+
+```python
+last_letters
+```
+
+
+
+
+    'vaylo'
+
+
+
+
+```python
+'U' + last_letters
+```
+
+
+
+
+    'Uvaylo'
+
+
+
+
+```python
+x = 'Hello world'
+```
+
+
+```python
+x + ' it is beautiful outside'
+```
+
+
+
+
+    'Hello world it is beautiful outside'
+
+
+
+
+```python
+letter = 'z'
+```
+
+
+```python
+letter * 10
+```
+
+
+
+
+    'zzzzzzzzzz'
+
+
+
+
+```python
+x = 'Hello World'
+```
+
+
+```python
+x.upper()
+```
+
+
+
+
+    'HELLO WORLD'
+
+
+
+
+```python
+x
+```
+
+
+
+
+    'Hello World'
+
+
+
+Както се вижда от примера по горе upper() не засяга стринга след като сме го извикали отново. Ако искаме стринга да остане с главни букви ще трябва да направим следното x = x.epper()
+
+
+```python
+x.lower()
+```
+
+
+
+
+    'hello world'
+
+
+
+
+```python
+x = 'This is a string'
+```
+
+
+```python
+x.split()
+```
+
+
+
+
+    ['This', 'is', 'a', 'string']
+
+
+
+
+```python
+x.split('i')
+```
+
+
+
+
+    ['Th', 's ', 's a str', 'ng']
+
+
+
+x.split() разделя стринга. В случая с i разделя стринга като премахва i
+
+<font color='red'>Strings are not mutable! (meaning you can't use indexing to change individual elements of a string)</font>
+
+Formating with the .format()method
+A good way to format objects into your strings for print statements is with the string.format() method.
+The syntax is : 
+'String here{}then also{}'.format('something1',something2')
+
+
+```python
+print('This is a string{}'.format(' INSERTED'))
+```
+
+    This is a string INSERTED
+    
+
+
+```python
+print('The {} {} {}'.format('fox','brown','quick'))
+```
+
+    The fox brown quick
+    
+
+
+```python
+print('The {2} {1} {0}'.format('fox','brown','quick'))
+```
+
+    The quick brown fox
+    
+
+
+```python
+print('The {q} {b} {f}'.format(f = 'fox',b = 'brown',q = 'quick'))
+```
+
+    The quick brown fox
+    
+
+В последния вариант задаваме променливи за FOX, BROWN & QUICK за да е по ясно за коя дума става въпрос. Предходния вариант също е верен, но нямаме гаранция, че думите са подредени по точно този начин. Също така като задаваме променливи кода става много по лесен за четене както от самите нас така и от други хора.
+
+<font color='red'>Float formatting follows "{value:width.precision f}"</font>
+
+
+```python
+result = 100/777
+```
+
+
+```python
+result
+```
+
+
+
+
+    0.1287001287001287
+
+
+
+
+```python
+print("The result was {r:1.3f}".format(r=result))
+```
+
+    The result was 0.129
+    
+
+Използвахме {r:1.3f} за да изкараме по прицизно число. Като в случая R е променливата 1 дължината и накрая 3f до колко символа да е прецизно. Виж примера в червено по горе!
+
+
+```python
+result = 104.12345
+```
+
+
+```python
+print("The result was {r:1.2f}".format(r=result))
+```
+
+    The result was 104.12
+    
+
+
+```python
+name = "Jose"
+```
+
+
+```python
+print(f'Hello, his name is {name}')
+```
+
+    Hello, his name is Jose
+    
+
+Друг начин да се изпише горното е:
+
+
+```python
+print('Hello, his name is {}'.format(name))
+```
+
+    Hello, his name is Jose
+    
+
+
+```python
+name = "Sam"
+age = 3
+```
+
+
+```python
+print(f'{name} is {age} years old ')
+```
+
+    Sam is 3 years old 
+    
+
+LISTS ↓
+
+
+```python
+my_list = [1, 2, 3]
+```
+
+
+```python
+my_list = ['STRING', 365, 16.5]
+```
+
+
+```python
+len(my_list)
+```
+
+
+
+
+    3
+
+
+
+LEN показва колко елемента има в ЛИСТА - LIST
+
+
+```python
+mylist = ['one', 'two', 'three']
+```
+
+
+```python
+mylist[0]
+```
+
+
+
+
+    'one'
+
+
+
+
+```python
+mylist[1:]
+```
+
+
+
+
+    ['two', 'three']
+
+
+
+
+```python
+another_list = ['four', 'five']
+```
+
+
+```python
+new_list = mylist + another_list
+```
+
+
+```python
+new_list
+```
+
+
+
+
+    ['one', 'two', 'three', 'four', 'five']
+
+
+
+
+```python
+new_list[0] = 'ONE ALL CAPS'
+```
+
+
+```python
+new_list
+```
+
+
+
+
+    ['ONE ALL CAPS', 'two', 'three', 'four', 'five']
+
+
+
+
+```python
+new_list.append('six')
+```
+
+
+```python
+new_list
+```
+
+
+
+
+    ['ONE ALL CAPS', 'two', 'three', 'four', 'five', 'six']
+
+
+
+.append добавя елемент в <font color ='red'> КРАЯ на ЛИСТА</font>
+
+
+```python
+new_list.append('seven')
+```
+
+
+```python
+new_list
+```
+
+
+
+
+    ['ONE ALL CAPS', 'two', 'three', 'four', 'five', 'six', 'seven']
+
+
+
+
+```python
+new_list.pop()
+```
+
+
+
+
+    'seven'
+
+
+
+
+```python
+new_list
+```
+
+
+
+
+    ['ONE ALL CAPS', 'two', 'three', 'four', 'five', 'six']
+
+
+
+.pop премахва ПОСЛЕДНИЯ елемент от ЛИСТА. Ако зададем стойност към .рор(2)<- примерно 2 ще премахне третия елемент от листа.
+
+
+```python
+popped_item = new_list.pop()
+```
+
+
+```python
+popped_item
+```
+
+
+
+
+    'six'
+
+
+
+
+```python
+new_list
+```
+
+
+
+
+    ['ONE ALL CAPS', 'two', 'three', 'four', 'five']
+
+
+
+
+```python
+new_list.pop(0)
+```
+
+
+
+
+    'ONE ALL CAPS'
+
+
+
+
+```python
+new_list
+```
+
+
+
+
+    ['two', 'three', 'four', 'five']
+
+
+
+
+```python
+new_list = ['d', 'r', 'k', 'i', 'v']
+new_num = [4, 9, 3, 7, 1]
+```
+
+
+```python
+new_list.sort()
+```
+
+
+```python
+new_list
+```
+
+
+
+
+    ['d', 'i', 'k', 'r', 'v']
+
+
+
+.sort() сортира листа по азбучен ред или подрежда числата последователно.
+
+
+```python
+new_num.sort()
+```
+
+
+```python
+new_num
+```
+
+
+
+
+    [1, 3, 4, 7, 9]
+
+
+
+
+```python
+new_num.reverse()
+```
+
+
+```python
+new_num
+```
+
+
+
+
+    [9, 7, 4, 3, 1]
+
+
+
+<font color = red>DICTIONARIES {'key1':'value1','key2':'value2'}</color>
+
+
+```python
+my_dict = {'key1':'value1','key2':'value2'}
+```
+
+
+```python
+my_dict
+```
+
+
+
+
+    {'key1': 'value1', 'key2': 'value2'}
+
+
+
+
+```python
+my_dict['key1']
+```
+
+
+
+
+    'value1'
+
+
+
+
+```python
+prices_lookup = {'meat':1.99, 'apple':1.89,'milk':2.50}
+```
+
+
+```python
+prices_lookup['apple']
+```
+
+
+
+
+    1.89
+
+
+
+
+```python
+d = {'k1':123,'k2':[1,2,3],'k3':{'insideKey':100}}
+```
+
+
+```python
+d['k2']
+```
+
+
+
+
+    [1, 2, 3]
+
+
+
+
+```python
+d['k3']
+```
+
+
+
+
+    {'insideKey': 100}
+
+
+
+
+```python
+d['k3']['insideKey']
+```
+
+
+
+
+    100
+
+
+
+
+```python
+d = {'key1':['a','b','c']}
+```
+
+
+```python
+d['key1'][2]
+```
+
+
+
+
+    'c'
+
+
+
+
+```python
+d = {'k1':100,'k2':200}
+```
+
+
+```python
+d
+```
+
+
+
+
+    {'k1': 100, 'k2': 200}
+
+
+
+
+```python
+d['k3'] = 300
+```
+
+
+```python
+d
+```
+
+
+
+
+    {'k1': 100, 'k2': 200, 'k3': 300}
+
+
+
+
+```python
+d['k1'] = 'NEW VALUE'
+```
+
+
+```python
+d
+```
+
+
+
+
+    {'k1': 'NEW VALUE', 'k2': 200, 'k3': 300}
+
+
+
+
+```python
+d = {'k1': 100, 'k2': 200, 'k3': 300}
+```
+
+
+```python
+d.keys()
+```
+
+
+
+
+    dict_keys(['k1', 'k2', 'k3'])
+
+
+
+
+```python
+d.values()
+```
+
+
+
+
+    dict_values([100, 200, 300])
+
+
+
+
+```python
+d.items()
+```
+
+
+
+
+    dict_items([('k1', 100), ('k2', 200), ('k3', 300)])
+
+
+
+
+```python
+
+```
